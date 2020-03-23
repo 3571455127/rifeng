@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2020-03-23 16:28:09
+Date: 2020-03-23 16:46:20
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -788,7 +788,7 @@ CREATE TABLE `cosmo_log` (
   `time` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `ip` (`ip`,`time`)
-) ENGINE=MyISAM AUTO_INCREMENT=496 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=497 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cosmo_log
@@ -1003,6 +1003,7 @@ INSERT INTO `cosmo_log` VALUES ('492', '0', '0', 'admin', '登录成功', '127.0
 INSERT INTO `cosmo_log` VALUES ('493', '0', '0', 'admin', '登录成功', '127.0.0.1', '1584585000');
 INSERT INTO `cosmo_log` VALUES ('494', '0', '0', 'admin', '登录成功', '127.0.0.1', '1584671355');
 INSERT INTO `cosmo_log` VALUES ('495', '0', '0', 'rifeng', '登录成功', '127.0.0.1', '1584673410');
+INSERT INTO `cosmo_log` VALUES ('496', '0', '0', 'rifeng', '登录成功', '127.0.0.1', '1584953134');
 
 -- ----------------------------
 -- Table structure for cosmo_mailbox
@@ -1305,9 +1306,8 @@ CREATE TABLE `cosmo_online` (
 -- ----------------------------
 -- Records of cosmo_online
 -- ----------------------------
-INSERT INTO `cosmo_online` VALUES ('27db7e653ef75907bf2db89b1d2665ba', '0', '', '127.0.0.1', '1584950623', '4');
-INSERT INTO `cosmo_online` VALUES ('838c490fdccd3bbf32f924f1036a35cd', '0', '', '127.0.0.1', '1584950798', '4');
 INSERT INTO `cosmo_online` VALUES ('dc767112aa6ae2f34e69c0922c5ebc4f', '0', '', '127.0.0.1', '1584951737', '4');
+INSERT INTO `cosmo_online` VALUES ('55c301483fbeb093a252879c212ee4a7', '0', '', '127.0.0.1', '1584953125', '4');
 
 -- ----------------------------
 -- Table structure for cosmo_page
@@ -1587,6 +1587,6 @@ CREATE TABLE `cosmo_user` (
 -- ----------------------------
 -- Records of cosmo_user
 -- ----------------------------
-INSERT INTO `cosmo_user` VALUES ('4', '2', 'rifeng', '23d2b488011819b8bf942a660c6d61dbf4bdfc9a', 'osd@rifeng.cn', '', '', '', '1', '', '', '', '', '', '142', '1540782434', '0', '1584673410', '61.140.27.219', '127.0.0.1', '1', '0.00', '0', '');
+INSERT INTO `cosmo_user` VALUES ('4', '2', 'rifeng', '23d2b488011819b8bf942a660c6d61dbf4bdfc9a', 'osd@rifeng.cn', '', '', '', '1', '', '', '', '', '', '143', '1540782434', '0', '1584953134', '61.140.27.219', '127.0.0.1', '1', '0.00', '0', '');
 INSERT INTO `cosmo_user` VALUES ('2', '1', 'admin', 'fabaa88b6979f99875d10d053a1b128e90920d98', 'info@cosmoing.com', 'admin', '', '', '1', '', '', '', '', '', '87', '1502869825', '0', '1584671355', '122.97.176.27', '127.0.0.1', '1', '0.00', '0', '');
 SET FOREIGN_KEY_CHECKS=1;
