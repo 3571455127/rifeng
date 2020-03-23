@@ -10,6 +10,7 @@ li {
 body,
 html {
     background: #fff;
+
 }
 
 /* header */
@@ -57,19 +58,6 @@ header.scrolled .logo-container img {
     width: 50%;
 }
 
-.main .swiper-container .swiper-button-next {
-    background-image: url("../images/next.png");
-    width: 80px;
-    height: 80px;
-    background-size: 80px 80px;
-}
-
-.main .swiper-container .swiper-button-prev {
-    background-image: url("../images/prev.png");
-    width: 80px;
-    height: 80px;
-    background-size: 80px 80px;
-}
 
 #how-it-works .left h3 {
     text-transform: uppercase;
@@ -334,6 +322,9 @@ body .group-one .active .m-btn {
     }
 }
 
+
+
+
 #cn-add {
     position: relative;
 }
@@ -351,8 +342,8 @@ body .group-one .active .m-btn {
 .main-team .box {
     position: absolute;
     opacity: 0;
-    top: -62px;
-    left: -20px;
+    top: -40px;
+    left: -50px;
     box-shadow: 0 0 10px 0 #ccc;
     background: white;
     padding: 10px 5px;
@@ -582,7 +573,8 @@ footer .info div:first-child {
 }
 
 footer .info img {
-    padding-right: 25px;
+    padding-right: 10px;
+
 }
 
 footer .internet {
@@ -618,7 +610,7 @@ footer form .submit-btn {
 
 .goTop {
     position: fixed;
-    bottom: 10rem;
+    bottom: 6rem;
     right: 0;
     display: none;
     width: 58px;
@@ -669,38 +661,6 @@ footer form .submit-btn {
     background-color: transparent;
 }
 
-@media (max-width: 1920px) {
-    .modal-dialog {
-        width: 700px;
-        margin: 0px auto;
-    }
-
-    .modal-content .modal-body {
-        width: 700px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 1680px) {
-    .modal-dialog {
-        width: 100%;
-        margin: 0;
-    }
-
-    .modal-open .modal {
-        min-height: 400px;
-        padding-right: 0 !important;
-    }
-
-    .modal-content .modal-body {
-        width: 100%;
-        height: 350px;
-    }
-
-    .modal-body {
-        padding: 0;
-    }
-}
 
 .bqd #cn-add .active-icon .icon {
     color: red !important;
@@ -798,3 +758,227 @@ footer form .submit-btn {
 .main .swiper-slide .txt .gos:hover {
     text-decoration: none;
 }
+
+.emails {
+    color: #fff;
+}
+
+#how-it-works .box p {
+    color: #4D4D4D;
+}
+
+
+
+@media (max-width: 1920px) {
+
+    .main .swiper-container .swiper-button-next {
+        background-image: url("../images/next.png");
+        width: 80px;
+        height: 80px;
+        background-size: 80px 80px;
+    }
+
+    .main .swiper-container .swiper-button-prev {
+        background-image: url("../images/prev.png");
+        width: 80px;
+        height: 80px;
+        background-size: 80px 80px;
+    }
+
+    .modal-dialog {
+        width: 700px;
+        margin: 0px auto;
+    }
+
+    .modal-content .modal-body {
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 1680px) {
+    .modal-dialog {
+        width: 100%;
+        margin: 0;
+    }
+
+    #how-it-works h3,
+    #why-buy-one h4 {
+        font-size: 32px;
+    }
+
+    .main .swiper-container .swiper-button-next,
+    .main .swiper-container .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+    }
+
+    .modal-open .modal {
+        min-height: 400px;
+        padding-right: 0 !important;
+    }
+
+    .modal-content .modal-body {
+        width: 100%;
+        height: 350px;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    #how-it-works .ready img {
+        width: 32%;
+    }
+
+    #how-it-works,
+    #why-buy-one,
+    .page-wrapper {
+        padding: 3% 0;
+    }
+
+    #why-buy-one h4 {
+        margin-bottom: 20px;
+    }
+
+    #why-buy-one .benefits-container .benefit img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    #why-buy-one .benefits-container .benefit h5 {
+        margin-bottom: 8px;
+    }
+
+    footer {
+        padding-top: 3%;
+    }
+
+    footer .info {
+        padding: 25px 0;
+    }
+
+    footer .internet {
+        padding-bottom: 25px
+    }
+
+    footer .internet a {
+        color: #B3B3B3;
+    }
+}
+
+@media all and (max-width: 1280px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    #cn-add {
+        width: 555px;
+        height: 431px;
+    }
+
+    #hamburger span {
+        background-color: #333;
+    }
+
+    header .logo-container img {
+        width: 50% !important;
+    }
+
+    header nav a {
+        text-align: center;
+    }
+
+    .goTop {
+        width: 38px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .goTop .topIcon {
+        width: 11px;
+        height: 11px;
+        top: 11px;
+    }
+
+    .goTop p {
+        font-size: 12px;
+        padding-top: 21px;
+    }
+
+    footer .footer-content .top .box-img {
+        width: 29px;
+        height: 42px;
+    }
+
+    footer .footer-content .top .company {
+        padding: 0;
+        padding-left: 15px;
+    }
+
+    footer .footer-content .text .title {
+        padding: 5px 0;
+    }
+
+    footer .info>div:nth-child(2),
+    footer .info>div:nth-child(3) {
+        text-align: left;
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+
+    footer {
+        padding-bottom: 0;
+    }
+
+    .internet a {
+        font-size: 16px;
+    }
+
+    footer .internet {
+        padding-bottom: 16px;
+    }
+
+    footer form .submit-btn {
+        margin-top: 10px;
+    }
+
+    .accordion {
+        margin-top: -40px;
+    }
+
+    #why-buy-one .benefits-container .benefit {
+        width: 50%;
+    }
+
+    #why-buy-one .benefits-container .benefit h5 {
+        font-size: 14px;
+    }
+
+    #how-it-works h3,
+    #why-buy-one h4 {
+        font-size: 24px;
+    }
+
+    #how-it-works h3 {
+        margin-bottom: 15px;
+    }
+
+    #how-it-works .box p {
+        margin-bottom: 8px
+    }
+
+    .modal-open .modal {
+        width: 300px;
+    }
+
+    .modal-content .modal-body {
+        height: 220px;
+    }
+}
+

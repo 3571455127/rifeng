@@ -1,42 +1,5 @@
 $(function () {
 
-    // map
-//    $('#x1').click(function () {
-//        $('.b1').click();
-//
-//    })
-//    $('#x2').click(function () {
-//        $('.b2').click();
-//
-//    })
-//    $('#x3').click(function () {
-//        $('.b3').click();
-//
-//    })
-//    $('#x4').click(function () {
-//        $('.b4').click();
-//    })
-//
-//    $(".b1").click(function () {
-//        $("#x1").siblings().removeClass('active-icon');
-//        $("#x1").addClass("active-icon");
-//    })
-//    $(".b2").click(function () {
-//        $("#x2").siblings().removeClass('active-icon');
-//        $("#x2").addClass("active-icon");
-//    })
-//    $(".b3").click(function () {
-//        $("#x3").siblings().removeClass('active-icon');
-//        $("#x3").addClass("active-icon");
-//    })
-//    $(".b4").click(function () {
-//        $("#x4").siblings().removeClass('active-icon');
-//        $("#x4").addClass("active-icon");
-//    })
-
-
-
-
     var result = window.matchMedia('(max-width:418px)');
     var result2 = window.matchMedia('(max-width:768px)');
     var result3 = window.matchMedia('(max-width:992px)');
@@ -67,9 +30,9 @@ $(function () {
     });
 
 
-    // $("nav li").click(function () {
-    //     $(this).addClass("actives").siblings().removeClass('actives');
-    // })
+    $("nav li").click(function () {
+        $(this).addClass("actives").siblings().removeClass('actives');
+    })
 
     // 返回顶部
     $(window).scroll(function () {

@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit();?>
 <!-- 
 <div class="mianbao">
     <div class="mb_dao">

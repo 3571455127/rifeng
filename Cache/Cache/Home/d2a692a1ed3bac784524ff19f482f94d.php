@@ -47,12 +47,10 @@
                     <li><a href="#contact">Contact us</a></li>
                 </ul>
             </nav>
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#box">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+            <div id="hamburger">
+                <span class="top-bar"></span>
+                <span class="mid-bar"></span>
+                <span class="bot-bar"></span>
             </div>
         </div>
 
@@ -207,6 +205,7 @@
     $(".b<?php echo ($r["id"]); ?>").click(function () {
         $("#x<?php echo ($r["id"]); ?>").siblings().removeClass('active-icon');
         $("#x<?php echo ($r["id"]); ?>").addClass("active-icon");
+        
     });<?php endforeach; endif;?>
         })
     </script>
@@ -258,12 +257,12 @@
                     </div>
                 </div>
                 <div class="info clearfix">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="__PUBLIC__/www/images/address.png"
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"><img src="__PUBLIC__/www/images/address.png"
                             alt=""><?php echo ($address); ?></div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="__PUBLIC__/www/images/phone.png" alt=""><?php echo ($phone); ?>
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12"><img src="__PUBLIC__/www/images/phone.png" alt=""><?php echo ($phone); ?>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="__PUBLIC__/www/images/eamil.png" alt="">
-                        <a href="mailto:<?php echo ($email); ?>" target="_blank"><?php echo ($email); ?></a>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"><img src="__PUBLIC__/www/images/eamil.png" alt="">
+                        <a href="mailto:<?php echo ($email); ?>" class="emails" target="_blank"><?php echo ($email); ?></a>
                     </div>
 
                 </div>
