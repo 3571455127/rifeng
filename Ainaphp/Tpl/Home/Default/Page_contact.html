@@ -1,0 +1,46 @@
+
+<!--面包屑导航-->
+<div class="mianbao">
+    <!-- <div class="mb_dao">
+        <img src="__PUBLIC__/www/images/home-icon.png" onclick="window.open('http://<?php echo $_SERVER['HTTP_HOST']?>','_self');"/>
+        <a href="/contact.html">Contact Us</a>
+    </div> -->
+</div>
+
+<!--联系我们内容部分-->
+<div class="contact" style="background: #fff;margin-top: 150px;padding: 80px 0">
+    <h4>WE ARE MORE THAN HAPPY TO ANSWER ANY ENQUIRIES VIA THIS CONTACT PAGE OR EMAIL!!!</h4>
+    <div class="contact_center">
+        <div class="center_left">
+            <h4>TO GET IN TOUCH</h4>
+            <h5><img src="__PUBLIC__/www/images/c1.png" alt="" />HEAD OFFICE LOCATION</h5>
+            <p>{$address}</p>
+
+            <h5><img src="__PUBLIC__/www/images/c2.png" alt="" />OFFICE CONTACT</h5>
+            <p><span>TEL:</span> {$phone} </p>
+
+            <p><span>FAX: </span>{$domestic_fax}</p>
+            <p><span>EMAIL: </span>{$email}</p>
+        </div>
+        <div class="center_right">
+            <h4>LEAVE A MESSAGE</h4>
+            <form name="form" method="post" action="index.php?g=Home&a=message" id="contact_form" >
+            <input name="forward" type="hidden" value="{$_SERVER['SERVER_NAME']}{if $catid}/index.php?m={$Categorys[$catid]['module']}&a=index&id={$catid}{else}/index.php{/if}"/>
+            <input type="hidden" name="lang" value="{$Lang}">
+            <span style="marg-right:5px;color:red;font-weight:700;">*</span>&nbsp;<input type="text" name="name" id="name" placeholder="name">
+            <span style="marg-right:5px;color:red;font-weight:700;">*</span>&nbsp;<input type="text" name="phone" id="phone" placeholder="Phone">
+            <span style="marg-right:5px;color:red;font-weight:700;">*</span>&nbsp;<input type="text" name="email" id="mail" placeholder="Email">
+            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                <input type="submit" class="contact_send" value="SUBMIT NOW">
+            </form>
+        </div>
+    </div>
+    <div class="map_div">
+		<iframe src="http://www.google.cn/maps/embed?pb=!1m18!1m12!1m3!1d1838.9095370799!2d113.23523165818717!3d22.809166996265365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340248e1014a77b5%3A0xaeddd6f6aeeff16f!2z5bm_5Lic6ZS75Y6L5py65bqK5Y6C!5e0!3m2!1szh-CN!2scn!4v1545381409014" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+</div>
+<!--顶部图片-->
+<div class="top_img">
+  <img src="__PUBLIC__/www/images/product_bander.jpg" alt="" />
+</div>

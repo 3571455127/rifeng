@@ -1,0 +1,25 @@
+  <!-- 中间内容 -->
+    <div class="index">
+        <div class="top_img">
+            <img src="__PUBLIC__/wap/images/top_img.jpg" alt="" />
+        </div>
+    </div>
+   
+    <div class="index_content">
+        <!--新闻列表-->
+        <div class="index_new" style="background: #fff;">
+       
+            <ul class="new_ul">
+                <YP:list catid="108" order="id asc">
+                <li>
+                    <a href="{$r.url}">
+                        <h5>{$r.title}</h5>
+                        <span>{$r.createtime|toDate=###,'Y-m-d'}</span>
+                        <p>{$r.description}</p>
+                    </a>
+                </li>
+               </YP:list>
+            </ul>
+        
+        </div>
+    </div>

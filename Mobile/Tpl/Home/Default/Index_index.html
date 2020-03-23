@@ -1,0 +1,93 @@
+<!-- 中间内容 -->
+    <!--轮播图-->
+    <div class="index">
+        <div class="swiper-container swiper-container1">
+            <div class="swiper-wrapper">
+                <YP:flash flashid="2" />
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+
+    <!--关于我们-->
+        <div class="index_about">
+            <img src="__PUBLIC__/wap/images/about.jpg" alt="" />
+            <div>
+                <h4>ABOUT US</h4>
+                <p>GUANGDONG METAL FORMING MACHINE WORKS CO.,LTD is a forging equipment manufacturer integrating professional design, research and development, manufacturing and service in South China. Is the first batch of domestic forging industry through ISO9001 enterprises, and has the "national backbone enterprise for forging equipment" and "national export bases", "national high-tech enterprises" more than ten honors.</p>
+            </div>
+            <br/>
+            <a class="more" href="/about.html">VIEW MORE</a>
+        </div>
+        
+    <!--首页产品列表-->
+    <div class="index_content">
+        <div class="index_pro" >
+            <h4 class="bioati">PRODUCTS</h4>
+            <div class="pro_list">
+                <div>
+                    <h4 class="biaoti_h4 active">PUNCHING MACHINE<span></span></h4>
+                    <h4 class="biaoti_h4">HYDRAULIC PRESS<span></span></h4>
+                </div>
+                <ul class="pro_list_ul" >
+                    <YP:list catid="94" limit="3" order="id asc">
+                    <li>
+                        <a href="{$r.url}">
+                            <img src="{$r.thumb}" alt="" />
+                            <h5>{$r.keywords}</h5>
+                            <p>{$r.title}</p>
+                        </a>
+                    </li>
+                    </YP:list>
+                </ul>
+                <ul class="pro_list_ul" style="display: none;">
+                    <YP:list catid="95" limit="3" order="id asc">
+                    <li>
+                        <a href="{$r.url}">
+                            <img src="{$r.thumb}" alt="" />
+                            <h5>{$r.keywords}</h5>
+                            <p>{$r.title}</p>
+                        </a>
+                    </li>
+                    </YP:list>
+                </ul>
+                <a class="more" href="/product.html">VIEW MORE</a>
+            </div>
+        </div>
+        <!--首页案例-->
+        <div class="case_list">
+            <h4 class="bioati">CASES</h4>
+            <ul class="case_list">
+                <YP:list catid="77" limit="2" order="id asc">
+                <li>
+                    <img src="{$r.thumb}" alt="" />
+                    <a href="{$r.url}">
+                        <h5>{$r.title}</h5>
+                    </a>
+                </li>
+                </YP:list>            
+            </ul>
+            <a class="more" href="/cases.html">VIEW MORE</a>
+        </div>
+        
+        <!--新闻列表-->
+        <div class="index_new">
+            <h4 class="bioati">NEWS</h4>
+            <ul class="new_ul">
+                <YP:list catid="108" limit="3" order="id asc">
+                <li>
+                    <a href="{$r.url}">
+                        <h5>{$r.title}</h5>
+                        <span>{$r.createtime|toDate=###,'Y-m-d'}</span>
+                        <p>{$r.description}</p>
+                    </a>
+                </li>
+                </YP:list>
+            </ul>
+            <a class="more" href="/news.html">VIEW MORE</a>
+        </div>
+        
+        
+    </div>

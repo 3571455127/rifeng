@@ -1,0 +1,23 @@
+<!-- 中间内容 -->
+   
+    <div class="index">
+        <div class="top_img">
+            <img src="__PUBLIC__/wap/images/top_img.jpg" alt="" />
+        </div>
+    </div>
+    
+    <div class="index_content">
+        <!--案例列表-->
+        <div class="case_list">
+            <ul class="case_list">
+                <YP:list catid="77" order="id asc">
+                <li>
+                    <img src="{$r.thumb}" alt="" />
+                    <a href="{$r.url}">
+                        <h5>{$r.title}</h5>
+                    </a>
+                </li>
+                </YP:list>
+            </ul>
+        </div>
+    </div>

@@ -1,0 +1,26 @@
+<div class="Title">
+    <a href="/index.php" class="t_a">HOME</a> - <a href="/resources.html" class="t_a active">RESOURCES</a>
+</div>
+<div class="pro_con">
+    <div class="TopIn">
+        <h3 class="T_h3">RESOURCES</h3>
+
+    </div>
+    <div class="re_con">
+        <ul class="re_ul">
+        <volist name="list" id="r">
+            <li class="re_li">
+                <div class="re_box">
+                    <div class="re_t">
+                        <img src="{$r.thumb}">
+                        <a href="{$r.download}" class="re_a" target="_blank"><span class="re_s1"><img src="__PUBLIC__/www/images/r2.png"></span></a>
+                    </div>
+                    <div class="re_p">
+                        {$r.title}
+                    </div>
+                </div>
+            </li>
+        </volist>
+        </ul>
+    </div>
+</div>

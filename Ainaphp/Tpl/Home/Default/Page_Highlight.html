@@ -1,0 +1,50 @@
+
+<!--顶部图片-->
+<div class="container-fluid" style="padding: 0">
+    <div class="row" style="margin: 0;">
+        <div class="col-xs-12" style="padding: 0;">
+             {if $Categorys[$bcid][image]}<img src="{$Categorys[$bcid][image]}" alt="banner">{else}<img src="__PUBLIC__/www/image/productTopBg.jpg" alt="" class="img-responsive"/>{/if}
+        </div>
+    </div>
+</div>
+
+<!--内容-->
+<div style="background: #efefef">
+
+    <div class="container">
+        <!--标题-->
+        <div class="row" style="margin: 3% 0">
+            <!-- 标题-->
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-4" style="padding: 0">
+                        <span><img src="__PUBLIC__/www/image/productH.png" alt=""/></span>
+                        <span style="font-size: 23px;color: #000;position: relative;top: 5px;font-family: Bold;">HIGHLIGHTS</span>
+                    </div>
+                    <!--面包屑-->
+                    <div class="col-xs-8 text-right" style="padding-top: 10px">
+                        <span style="padding-right: 5px"><img src="__PUBLIC__/www/image/productM.png" alt=""/></span>
+                        <span style="color: #666;font-size: 14px">You Location：
+                            <a href="index.html">Home</a> -<YP:catpos catid="catid" space=" - "/>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 编辑框-->
+        <div class="row  aboutUsText" style="width:100%">
+            <div class="col-xs-12 text-center" style="width:100%">
+
+                {$content}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .aboutUsText table tbody tr:first-child img{
+        width: 100%;
+    }
+</style>

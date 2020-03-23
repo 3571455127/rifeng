@@ -1,0 +1,32 @@
+
+<!--面包屑导航-->
+<div class="mianbao">
+    <!-- <div class="mb_dao">
+        <img src="__PUBLIC__/www/images/home-icon.png" alt="" onclick="window.open('http://<?php echo $_SERVER['HTTP_HOST']?>','_self');" />
+        <a href="/cases.html">Cases</a>
+    </div> -->
+</div>
+
+<!--案例-->
+<div class="index_case" style="margin-top: 150px">
+      <!--<h4 style="line-height: 100px;font-weight: 700;font-size: 24px;text-align: center;color: #000">Cases</h4>-->
+    <ul>
+        <YP:list order="id desc" catid="77" >
+        <li>
+            <img class="case_img" src="{$r.thumb}" alt="" />
+            <div class="yi_case">
+                <h4>{$r.title}</h4>
+                <p>{$r.description}</p>
+            </div>
+            <div class="er_case">
+                <a href="{$r.url}"><img src="__PUBLIC__/www/images/more.png" alt="" /></a>
+            </div>
+        </li>
+        </YP:list>
+    </ul>
+
+</div>
+<!--顶部图片-->
+<div class="top_img">
+  <img src="__PUBLIC__/www/images/product_bander.jpg" alt="" />
+</div>

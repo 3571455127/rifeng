@@ -1,0 +1,39 @@
+﻿<!--面包屑导航-->
+<div class="mianbao">
+    <!-- <div class="mb_dao">
+        <img src="__PUBLIC__/www/images/home-icon.png" alt="" onclick="window.open('http://<?php echo $_SERVER['HTTP_HOST']?>','_self');" />
+        <a href="/news.html">News</a>
+    </div> -->
+</div>
+
+<!--view部分-->
+<div class="index_view" style="background-image: none;margin-top: 150px">
+    <!--<h4 style="line-height: 100px;font-weight: 700;font-size: 24px;text-align: center;color: #000">Cases</h4>-->
+    <ul>
+        <volist name="list" id="r" listorder="desc">
+        <li>
+            <a href="{$r.url}">
+            <img src="{$r.thumb}" alt="" />
+            <div>
+                <span>{$r.createtime|toDate=###,'Y-m-d'}</span>
+                <h4>{$r.title|str_cut=###,115,'....'}</h4>
+                <p>{$r.description|str_cut=###,315,'....'}</p>
+            </div>
+            </a>
+        </li>
+        </volist>
+    </ul>
+</div>
+<!--顶部图片-->
+<div class="top_img">
+ {if $Categorys[$catid][image]}
+   <img src="{$Categorys[$catid][image]}" alt="">
+   {else}
+   {if $Categorys[$bcid][image]}
+   <img src="{$Categorys[$bcid][image]}" />
+   {else}
+   <img src="__PUBLIC__/www/images/product_bander.jpg" alt="banner">
+   {/if}
+   {/if}
+</div>
+

@@ -1,0 +1,33 @@
+ <!-- 内容 -->
+    <div class="content">
+        <!-- 顶部图片-->
+        <div class="productTopImg">
+           {if $Categorys[$bcid][image]}<img src="{$Categorys[$bcid][image]}" alt="banner">{else} <img src="__PUBLIC__/wap/image/topBg.jpg" alt=""/>{/if}
+           
+        </div>
+
+        <!-- 页面标题-->
+        <div class="productTextTop clearfix">
+            <div class="productTextTopP clearfix">
+                <p>
+                    <img src="__PUBLIC__/wap/image/productH.png" alt=""/>
+                </p>
+                <h2>{$catname}</h2>
+            </div>
+        </div>
+
+       
+
+        <!-- 产品列表-->
+        <div class="productList clearfix">
+            <!-- 产品一-->
+            <YP:subcat catid="73">
+            <div class="productListDivs">
+                <h2>{$r.catname}</h2>
+                <a href="{$r.url}"><img src="{$r.image}" alt="{$r.catname}"/></a>
+            </div>
+            </YP:subcat>
+        </div>
+           
+
+    </div>

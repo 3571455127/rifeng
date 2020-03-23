@@ -1,0 +1,31 @@
+<include file="Home:banner"/>
+<div class="crumbs">
+    <div class="container">
+        <a href="/index.php">HOME</a> /
+        <YP:catpos catid="catid" space="&gt;" />
+    </div>
+</div>
+<div class="container clearfix">
+    <include file="Home:sidebar"/>
+    <div class="mainBox">
+        <div class="mainTitle clearfix">
+            <h3 class="main_left">Search</h3>
+            <div class="main_address">
+                <a href="{$site_url}">HOME</a>-
+                <a href="{$site_url}">SEARCH</a>
+            </div>
+        </div>
+        <div class="newsList">
+            <ul >
+                <volist name="list" id="r">
+                <li><i></i><span>{$r.createtime|toDate=###,"Y-m-d"}</span><a href="{$r.url}" title="">{$r.title}</a></li>
+                </volist>
+            </ul>
+        </div> 
+        {if $pages}
+        <div class="page">
+             {$pages}
+        </div>  
+        {/if}
+    </div>
+</div>

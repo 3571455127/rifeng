@@ -1,0 +1,80 @@
+ <!--版权-->
+    <div class="banquan">
+        <div class="banquan_top">
+            <img src="__PUBLIC__/wap/images/logo.png" alt="" />
+            <div>
+                <p><img src="__PUBLIC__/wap/images/index_icon1.png" alt="" /></p>
+                <p><img src="__PUBLIC__/wap/images/index_icon2.png" alt="" /></p>
+                <p><img src="__PUBLIC__/wap/images/index_icon3.png" alt="" /></p>
+                <p><img src="__PUBLIC__/wap/images/index_icon4.png" alt="" /></p>
+                <p><img src="__PUBLIC__/wap/images/index_icon5.png" alt="" /></p>
+                <p><img src="__PUBLIC__/wap/images/index_icon6.png" alt="" /></p>
+            </div>
+
+        </div>
+        <h4>{$cop}</h4>
+
+    </div>
+    <!-- 底部浮动导航 -->
+    <div class="float-menu">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- 选中 active -->
+                <div class="col-xs-3 {if MODULE_NAME == 'Index'}active{/if}">
+                    <a href="/index.php">
+                        <img src="__PUBLIC__/wap/images/icon1.png" alt="">
+                        <p>HOME</p>
+                    </a>
+                </div>
+                <div class="col-xs-3 {if $bcid==73}active{/if}">
+                    <a href="/product.html">
+                        <img src="__PUBLIC__/wap/images/icon.png" alt="">
+                        <p>PRODUCTS</p>
+                    </a>
+                </div>
+                <div class="col-xs-3 {if $bcid==74}active{/if}">
+                    <a href="/about.html">
+                        <img src="__PUBLIC__/wap/images/icon3.png" alt="">
+                        <p>ABOUT US</p>
+                    </a>
+                </div>
+                <div class="col-xs-3 {if $bcid==78}active{/if}" style="border: 0">
+                    <a href="/contact.html">
+                        <img src="__PUBLIC__/wap/images/icon4.png" alt="">
+                        <p>CONTACT</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="back_top" src="__PUBLIC__/wap/images/top.png" alt="">
+
+</body>
+<script src="__PUBLIC__/wap/js/jquery-2.2.0.min.js"></script>
+<script src="__PUBLIC__/wap/js/jquery.simplesidebar.js"></script>
+<script src="__PUBLIC__/wap/js/swiper-3.3.1.min.js"></script>
+<script src="__PUBLIC__/wap/js/main.js"></script>
+<script>
+    var mySwiper1 = new Swiper('.swiper-container1', {
+        loop: true,
+        autoplay: 3000,
+        pagination: {
+            el: '.swiper-pagination'
+        }
+    })
+
+</script>
+<script>
+    $('.pro_de img').eq(0).click(function(){
+        var path1=$(".pro_de img").eq(0).attr("src");
+        var url1 = 'http://<?php echo $_SERVER["HTTP_HOST"]?>'+path1;
+        window.open(url1,'_blank');
+    });
+
+    $('.pro_de img').eq(1).click(function(){
+        var path2=$(".pro_de img").eq(1).attr("src");
+        var url2 = 'http://<?php echo $_SERVER["HTTP_HOST"]?>'+path2;
+        window.open(url2,'_blank');
+    });
+</script>
+</html>

@@ -1,0 +1,66 @@
+
+<!--面包屑导航-->
+<div class="mianbao" style="margin-bottom: 0;">
+    <!-- <div class="mb_dao">
+        <img src="__PUBLIC__/www/images/home-icon.png" alt="" onclick="window.open('http://<?php echo $_SERVER['HTTP_HOST']?>','_self');" />
+        <a href="/product.html">Products</a>
+    </div> -->
+</div>
+<!--产品图片-->
+<div class="pro_img" style="background: #ffffff;margin-top: 150px;padding: 80px 0">
+    <div class="img_left">
+        <img src="{$thumb}" alt="" />
+    </div>
+    <div class="img_right">
+        <h4>{$title}</h4>
+        <h5>{$keywords}</h5>
+        <!-- <p>{$description}</p> -->
+        <a href="javascript:;" class="show_form">INQUIRE NOW</a>
+    </div>
+</div>
+
+
+<!--产品参数部分-->
+<div class="pro_detail">
+    <div class="detail_h4">
+        <h4 class="active">SPECIFICATION</h4>
+        <h4>DESCRIPTION</h4>
+        <!--<h4 ><a href="{$document}" target="_blank" style="color: #666">DOWNLOAD</a></h4>-->
+    </div>
+    <div class="detail_div">
+        
+        <div class="detail_Specification">
+            <p style="font-size: 20px;text-align: center;">CLICK TO ENLARGE VIEW</p>
+            {$available_one}
+            {$available_two}
+        </div>
+        <div class="detail_Description" style="display: none;">
+            {$content}
+        </div>
+    </div>
+</div>
+<!--顶部图片-->
+<div class="top_img">
+  <img src="__PUBLIC__/www/images/product_bander.jpg" alt="" />
+</div>
+
+<!--Recommended产品列表部分-->
+<!-- <div class="index_pro" style="background: #fff;">
+    <div class="index_product" style="border-top: 1px solid #eee;border-bottom: 1px solid #eee;">
+
+        <div class="pro_er" style="box-shadow:none;">
+            <h5 class="biaoti2">Recommended Products</h5>
+            <ul>
+                <YP:list order="id desc" catid="73" limit="3" >
+                <li>
+                    <a href="{$r.url}">
+                        <div><img src="{$r.thumb}" alt="" /></div>
+                        <h4>{$r.title}</h4>
+                        <p>{$r.description}</p>
+                    </a>
+                </li>
+                </YP:list>
+            </ul>
+        </div>
+    </div>
+</div> -->

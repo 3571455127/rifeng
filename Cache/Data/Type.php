@@ -1,0 +1,1 @@
+<?php	return array ( 1 => array ( 'typeid' => '1', 'name' => '友情链接', 'parentid' => '0', 'description' => '友情链接分类', 'status' => '1', 'listorder' => '0', 'keyid' => '1', ), );?>

@@ -1,0 +1,42 @@
+<!--产品详情-->
+    <div class="pro_detail">
+        <div class="detail_img">
+            <img src="{$thumb}" alt="" />
+            <h4>{$keywords}</h4>
+            <span>{$model}</span>
+            <p>{$description}</p>
+            <a class="more" href="/contact.html">INQUIRE NOW</a>
+        </div>
+        <div class="index_pro" style="background: #fff;padding-bottom: 0;" >
+            <div class="pro_list">
+                <div>
+                    <h4 class="biaoti_h4 active">DESCRIPTION<span></span></h4>
+                    <h4 class="biaoti_h4">SPECIFICATION<span></span></h4>
+                </div>
+                <div class="pro_list_ul pro_con">
+                    {$content}
+                </div>
+                <div class="pro_list_ul pro_de" style="display: none;">
+                   <p style="text-align: center;font-size: 15px;">CLICK TO ENLARGE VIEW</p>
+                    {$available_one}
+                    {$available_two}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="index_pro product" style="background: #FFFFFF;padding-top: 0;">
+            <h4 class="bioati" style="text-align: left;padding: 0 2%;">PRODUCTS</h4>
+            <div class="pro_list">
+                <ul class="pro_list_ul" >
+                    <YP:list catid="73" order="id desc" limit="2">
+                    <li>
+                        <a href="{$r.url}">
+                            <img src="{$r.thumb}" alt="" />
+                            <h5>{$r.keywords}</h5>
+                            <p>{$r.title}</p>
+                        </a>
+                    </li>
+                    </YP:list>
+                </ul>
+            </div>
+        </div> -->

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <meta name="keywords" content="{$seo_keywords}"/>
+    <meta name="description" content="{$seo_description}"/>
+    <title>{if MODULE_NAME != 'Index'}{$seo_title}{else}{$site_name}{/if}</title>
+    <!-- css-->
+    <link rel="stylesheet" href="__PUBLIC__/wap/css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/wap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/wap/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/wap/css/main.css">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TNMWNT9');</script>
+<!-- End Google Tag Manager -->	
+	
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNMWNT9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- 头部 -->
+    <header>
+        <!-- 按钮 -->
+        <div class="toolbar">
+            <a href="/index.php" class="logo"><img src="__PUBLIC__/wap/images/logo.png" alt="外贸服务站" style="margin: 5px 10px;"></a>
+            <div id="open-sb" class="menu-button menu-left"><img src="__PUBLIC__/wap/images/menu-btn.png" alt="SEO优化"></div>
+        </div>
+    </header>
+    <section class="sidebar">
+        <nav>
+            <h3>MENU</h3>
+            <ul>
+                <li>
+                    <a href="/index.php" >HOME</a>
+                </li>
+                <YP:subcat catid="0">
+                <if condition = "$r[catname] != 'THANKS' ">
+                <li class="drop-cell">
+                    <a href="{$r.url}" >{$r.catname}</a>
+                    {if $r[child] == 1}
+                    <div class="menu-btn"></div>
+                    <div class="drop-down">
+                        <YP:subcat catid="$r[id]" id="rs">
+                        <div class="items">
+                            <a href="{$rs.url}">{$rs.catname}</a>
+                        </div>
+                        </YP:subcat>
+                    </div>
+                    {/if}
+                </li>
+                </if>
+                </YP:subcat>
+            </ul>
+        </nav>
+    </section>

@@ -1,0 +1,60 @@
+<include file="Home:banner"/>
+<div class="crumbs">
+    <div class="container">
+        <a href="/index.php">HOME</a> /
+        <YP:catpos catid="catid" space="&gt;" />
+    </div>
+</div>
+<div class="content">
+    <div class="section61">
+        <div class="sec61_box">
+            <div class="container">
+                <div class="row">
+                    <volist name="list" id="r">
+                    <div class="col-sm-6">
+                        <img src="{$r.thumb}">
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>contact us</h2>
+                        <i>If you have any questions please contact us, we 7 * 24 hours for your dedicated service</i>
+                        <p>Telephone : {$r.phone}</p>
+                        <p>Fax : {$r.fax} </p>
+                        <p>E-Mail : {$r.email}</p>
+                        <p>Address : {$r.address}</p>  
+                    </div>
+                    </volist>
+                </div>
+            </div>
+        </div>
+        <div class="sec62_box">
+            <div class="container">
+                <h2>Submit questions online</h2>
+                <i>Hello, welcome to submit any questions and suggestions on furniture, furniture, we will reply to you as soon as possible. Thank you for your support and help.</i>
+                <h3>Post your message:</h3>
+                <div class="row_form">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span>Name :</span>
+                            <input type="text"/>
+                        </div>
+                        <div class="col-sm-4">
+                            <span>E-mail :</span>
+                            <input type="text"/>
+                        </div>
+                        <div class="col-sm-4">
+                            <span>Phone :</span>
+                            <input type="text"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-area">
+                            <span>Content :</span>
+                            <textarea></textarea>
+                            <input type="submit" name="" value="Submit Message">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

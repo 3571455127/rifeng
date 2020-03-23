@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rian Geofandy Tan, rian.geofandy.tan@gmail.com" />
+    <meta name="description" content="{$seo_description}" />
+    <meta name="keywords" content="{$seo_keywords}" />
+    <title>{if MODULE_NAME != 'Index'}{$seo_title}{else}{$site_name}{/if}</title>
+    <link rel="manifest" href="assets/img/site.webmanifest" />
+    <link rel="mask-icon" href="/Public/www/images/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#0271b9" />
+    <link rel="stylesheet" href="__PUBLIC__/www/css/bootstrap.css">
+    <link rel="stylesheet" href="__PUBLIC__/www/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/www/css/swiper-4.5.0.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/www/css/main.css" />
+    <link rel="stylesheet" href="__PUBLIC__/www/css/map.css">
+    <script src="__PUBLIC__/www/js/jquery.js"></script>
+    <script src="__PUBLIC__/www/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/www/js/swiper-4.5.0.min.js"></script>
+    <script src="__PUBLIC__/www/js/main.js"></script>
+    <script src="__PUBLIC__/www/js/map.js"></script>
+    <style>
+        body {
+            position: relative;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href=""> <img src="/Public/www/images/logo2.png" alt="logo" /></a>
+            </div>
+            <nav id="box">
+                <ul>
+                    <li class="actives"><a href="#home">Home</a></li>
+                    <li><a class="" href="#working">Way of working</a></li>
+                    <li><a href="#benifits">Benifits</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#box">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <div class="main">
+        <div id="home"></div>
+        <!-- swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> <a href="" target="_blank">
+                        <img src="/Public/www/images/banner.png" alt=""></a>
+                    <div class="txt">
+                        <div class="title">safe shield</div>
+                        <p>a cloud-based intellegent detection </p>
+                        <p>solution for water supply system</p>
+                        <a class="gos" href="#contact">Let's go!</a>
+                    </div>
+                </div>
+                <!-- <div class="swiper-slide"> <a href="" target="_blank"> <img src="/Public/www/images/banner.png" alt=""></a></div> -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Way of working -->
+        <div id="how-it-works" class="target-element">
+            <div id="working"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 animate animate-down">
+                        <div class="box">
+                            <h3>Way of working </h3>
+                            <p>
+                                Safe Shield test process may vary from country to country. Here take Australia as an
+                                example.
+                            </p>
+                            <p>
+                                1.Check the piping system to see whether there is any leakage at the welding points,
+                                valves
+                                and
+                                plugs, then install the Safe Shield device
+                            </p>
+                            <p>2.Login the APP and fill in the form</p>
+                            <p>3.Pressure test stage: Select pressure test group, pressurize the system to setting
+                                pressure
+                                then
+                                start test. The hydrostatic test has one round which lasts 30 mins. </p>
+                            <p>4.When the pressure testing is completed, it will form a report and clicked to send a PDF
+                                file to
+                                tester's mailbox.</p>
+                            <p>Pressure test process can be customized.</p>
+                        </div>
+
+                        <a href="#contact"><img src="/Public/www/images/contacts.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-7 col-md-7">
+
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                            <div class="btn-img">
+                                <div class="img-box">
+                                    <img src="/Public/www/images/video.png" alt="Video instruction" />
+                                    <div class="hovers">
+                                        <img class="btn-play" src="/Public/www/images/btns-play.png" alt="" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe width="100%" height="100%"
+                                            src="https://www.youtube.com/embed/j6Mua8mybAY" frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen=""></iframe>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- Benifits -->
+        <div id="why-buy-one" class="target-element" data-before="#how-it-works">
+            <div id="benifits"></div>
+            <div class="container">
+                <h4 class="animate animate-down">Benifits</h4>
+                <div class="benefits-container">
+                    <div class="benefit">
+                        <img src="/Public/www/images/benifits1.png" alt="Safe time" />
+                        <h5>EXTEND THE PRODUCT RANGE</h5>
+                        <p>
+                            This service plays as the last security of
+                            product delivery from factory to houses.
+                            Therefore, we keep the product quality
+                            under control, from pre-sale to after-sale.
+                        </p>
+                    </div>
+
+                    <div class="benefit">
+                        <img src="/Public/www/images/benifits2.png" />
+                        <h5>IMPROVE EFFECTIVENESS</h5>
+                        <p>
+                            This testing tools with software can
+                            standardize and simplify the
+                            acceptance process. Plumbers are able
+                            to handle more service requirenebts.
+                        </p>
+                    </div>
+
+                    <div class="benefit">
+                        <img src="/Public/www/images/benifits3.png" />
+                        <h5>FOREVER STORAGE</h5>
+                        <p>
+                            The pressure test data will be stored
+                            in the cloud, the agent can generate
+                            a PDF report and sent to the registered
+                            mailbox at any time through the account
+                        </p>
+                    </div>
+
+                    <div class="benefit">
+                        <img src="/Public/www/images/benifits4.png" alt="Detailed Data Reports" />
+                        <h5>TIGHTEN BUSINESS BONDS </h5>
+                        <p>
+                            When Safety Shield service become a
+                            regular part of installation service, the bonds
+                            between plumber group and the supplier
+                            are tightened based on the data service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- map -->
+        <div class="page-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="bqd col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                        <div id="cn-add">
+                            <img src="/Public/www/images/map.png" alt="cn">
+
+                            <div class="cn-item po-bo main-team active-icon" style="bottom: 60px; right: 270px;"
+                                id="x1">
+                                <span><i class="fa fa-map-marker icon"></i></span>
+                                <div class="box">
+                                    FOSHAN WAYON SHOWROOM </div>
+                            </div>
+
+                            <div class="cn-item po-bo main-team" style="bottom: 140px; right: 80px;" id="x2">
+                                <span><i class="fa fa-map-marker icon"></i></span>
+                                <div class="box">
+                                    SHANGHAI WAYON STONE </div>
+                            </div>
+
+                            <div class="cn-item po-bo main-team" style="bottom: 177px; right: 86px;" id="x3">
+                                <span><i class="fa fa-map-marker icon"></i></span>
+                                <div class="box">
+                                    JIANGSU WAYON STONE </div>
+                            </div>
+
+                            <div class="cn-item po-bo main-team" style="bottom: 57px; right: 160px;" id="x4">
+                                <span><i class="fa fa-map-marker icon"></i></span>
+                                <div class="box">
+                                    GUANGDONG WAYON INDUSTRY </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+
+                        <ul id="accordion" class="accordion">
+                            <li class="">
+                                <div class="link b1"><i class="fa fa-plus"></i>sdarfghjkl1</div>
+                                <ul class="submenu">
+                                    <li>address:js;oeihgag</li>
+                                    <li>telephone ：2555522 </li>
+                                    <li>Fax:aoiheoigh</li>
+                                    <li>pc:lshejifghn</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="b2 link"><i class="fa fa-plus"></i>sdarfghjkl2</div>
+                                <ul class="submenu">
+                                    <li>address:js;oeihgag</li>
+                                    <li>telephone ：2555522 </li>
+                                    <li>Fax:aoiheoigh</li>
+                                    <li>pc:lshejifghn</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="b3 link"><i class="fa fa-plus"></i>sdarfghjkl3</div>
+                                <ul class="submenu">
+                                    <li>address:js;oeihgag</li>
+                                    <li>telephone ：2555522 </li>
+                                    <li>Fax:aoiheoigh</li>
+                                    <li>pc:lshejifghn</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="b4 link"><i class="fa fa-plus"></i>sdarfghjkl3</div>
+                                <ul class="submenu">
+                                    <li>address:js;oeihgag</li>
+                                    <li>telephone ：2555522 </li>
+                                    <li>Fax:aoiheoigh</li>
+                                    <li>pc:lshejifghn</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div id="contact"></div>
+        <div class="container">
+            <div class="row">
+                <div class="footer-content clearfix">
+                    <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="top clearfix">
+                            <div class="box-img col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <img class="" src="/Public/www/images/logo.png" alt="">
+                            </div>
+
+                            <div class="company col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                <p>{$cnname}</p>
+                                <p>{$site_name}</p>
+                            </div>
+                        </div>
+                        <div class="text col-lg-7">
+                            <div class="title">Lorem Ipsum</div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                                Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2  col-md-2 col-sm-0 col-xs-0"></div>
+                    <div class="form col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <form name="form" method="post" onsubmit="return beforeSubmit2(this);" action="index.php?g=Home&a=message" enctype="multipart/form-data">
+                            <input type="hidden" name="lang" value="{$Lang}">
+                            <div class="box">
+                                <p>Name:</p>
+                                <input type="text" name="name" placeholder="">
+                            </div>
+                            <div class="box">
+                                <p>Email:</p>
+                                <input type="text" name="email" placeholder="">
+                            </div>
+                            <div class="box">
+                                <p>Message for max Prefab:</p>
+                                <input type="text" name="message" placeholder="">
+                            </div>
+                            <input type="submit" value="Send" class="submit-btn">
+                        </form>
+                    </div>
+                </div>
+                <div class="info clearfix">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="/Public/www/images/address.png"
+                            alt="">{$address}</div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="/Public/www/images/phone.png" alt="">{$phone}
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="/Public/www/images/eamil.png" alt="">
+                        <a href="mailto:{$email}" target="_blank">{$email}</a>
+                    </div>
+
+                </div>
+                <div class="internet"><a href="{$wwwurl}" target="_blank">{$wwwurl}</a></div>
+            </div>
+        </div>
+
+        <div class="goTop" style="display: block;">
+            <i class="topIcon"></i>
+            <p>TOP</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

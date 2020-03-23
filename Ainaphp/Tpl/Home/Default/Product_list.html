@@ -1,0 +1,50 @@
+
+<!--面包屑导航-->
+<div class="mianbao">
+    <!-- <div class="mb_dao">
+        <img src="__PUBLIC__/www/images/home-icon.png" alt="" onclick="window.open('http://<?php echo $_SERVER['HTTP_HOST']?>','_self');" />
+        <a href="/product.html">Products</a>
+    </div> -->
+</div>
+
+<!--新产品列表部分-->
+<div class="index_pro">
+    <div class="index_product" >
+        <div class="pro_yi"style="background: #f7f7f7;">
+            <h4 class="h4add">PUNCHING MACHINE<span></span></h4>
+            <h4>HYDRAULIC PRESS<span style="display: none;"></span></h4>
+        </div>
+        <div class="pro_er" style="box-shadow:none">
+            <!--第一个产品列表-->
+            <ul class="qie">
+                <YP:list order="id asc" catid="94" id="r">
+                <li>
+                    <a href="{$r.url}">
+                        <div><img src="{$r.thumb}" alt="" /></div>
+                        <h4>{$r.title}</h4>
+                        <p>{$r.keywords}</p>
+                    </a>
+                </li>
+                </YP:list>
+            </ul>
+            <!--第二个产品列表-->
+            <ul class="qie" style="display: none;">
+                <YP:list order="id asc" catid="95" id="r">
+                <li>
+                    <a href="{$r.url}">
+                        <div><img src="{$r.thumb}" alt="" /></div>
+                        <h4>{$r.title}</h4>
+                        <p>{$r.keywords}</p>
+                    </a>
+                </li>
+                </YP:list>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<!--顶部图片-->
+<div class="top_img">
+  <img src="__PUBLIC__/www/images/product_bander.jpg" alt="" />
+</div>

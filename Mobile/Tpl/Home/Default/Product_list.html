@@ -1,0 +1,41 @@
+ <!-- 中间内容 -->
+    <div class="index">
+        <div class="top_img">
+            <img src="__PUBLIC__/wap/images/top_img.jpg" alt="" />
+        </div>
+    </div>
+    <!--首页产品列表-->
+    <div class="index_content">
+        <div class="index_pro product" style="background: #FFFFFF;">
+            <h4 class="bioati">PRODUCTS</h4>
+            <div class="pro_list">
+                <div>
+                    <h4 class="biaoti_h4 active">PUNCHING MACHINE<span></span></h4>
+                    <h4 class="biaoti_h4">HYDRAULIC PRESS<span></span></h4>
+                </div>
+                <ul class="pro_list_ul" >
+                    <YP:list catid="94" order="id asc">
+                    <li>
+                        <a href="{$r.url}">
+                            <img src="{$r.thumb}" alt="" />
+                            <h5>{$r.keywords}</h5>
+                            <p>{$r.title}</p>
+                        </a>
+                    </li>
+                   </YP:list>
+                </ul>
+                <ul class="pro_list_ul" style="display: none;">
+                    <YP:list catid="95" order="id asc">
+                    <li>
+                        <a href="{$r.url}">
+                            <img src="{$r.thumb}" alt="" />
+                            <h5>{$r.keywords}</h5>
+                            <p>{$r.title}</p>
+                        </a>
+                    </li>
+                    </YP:list>
+                </ul>
+            </div>
+        </div>
+
+    </div>
