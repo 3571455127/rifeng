@@ -17,7 +17,7 @@
         <img src="./Public/Images/logo2.png" style="height:55px;" alt=""/>
         </span>
         </div>
-	<div class="nav">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo L('welcome_user'); echo (session('username')); ?>  <i>|</i> [<?php echo ($usergroup); ?>]  <i>|</i> [<a href="<?php echo U('Login/logout');?>" target="_top"><?php echo L('logout');?></a>]  <i>|</i> <a href="<?php echo ($site_url); ?>" target="_blank"><?php echo L('home_index');?></a>  <i>|</i> <a href="javascript:void(0);"  onclick="gocacheurl();" ><?php echo L('UPDATE_CACHE');?></a></div>
+	<div class="nav">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo L('welcome_user'); echo (session('username')); ?>  <i>|</i> [<?php echo ($usergroup); ?>]  <i>|</i> [<a href="<?php echo U('Login/logout');?>" target="_top"><?php echo L('logout');?></a>]  <i>|</i> <a href="<?php echo ($site_url); ?>" target="_blank"><?php echo L('home_index');?></a>  <i>|</i> <a href="javascript:void(0);"  onclick="gocacheurl();" ><?php echo L('UPDATE_CACHE');?></a><i>|</i> <a href="./Public/Images/日丰着陆页后台使用说明.pdf" target='_blank'>help</a></div>
 </div>
 
 

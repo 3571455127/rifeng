@@ -168,7 +168,7 @@
                             <?php  $_result=M("Article")->field("*")->where(" 1  AND status=1  AND catid=74")->order("listorder desc")->limit("20")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="cn-item po-bo main-team" style="bottom: <?php echo ($r["xz"]); ?>px; right: <?php echo ($r["yz"]); ?>px;"
                                 id="x<?php echo ($r["id"]); ?>">
                                 <span><i class="fa fa-map-marker icon"></i></span>
-                                <div class="box"><?php echo ($r["title"]); ?></div>
+                                <div class="box xt<?php echo ($r["id"]); ?> xtt"><?php echo ($r["title"]); ?></div>
                             </div><?php endforeach; endif;?>
 
                         </div>
@@ -201,10 +201,15 @@
         $(function () {
     <?php  $_result=M("Article")->field("*")->where(" 1  AND status=1  AND catid=74")->order("listorder desc")->limit("20")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?>$('#x<?php echo ($r["id"]); ?>').click(function () {
         $('.b<?php echo ($r["id"]); ?>').click();
+        $(".xtt").css({'opacity':'0','z-index':'0'});
+        $(".xt<?php echo ($r["id"]); ?>").css({'opacity':'1','z-index':'99'});
     });
     $(".b<?php echo ($r["id"]); ?>").click(function () {
         $("#x<?php echo ($r["id"]); ?>").siblings().removeClass('active-icon');
         $("#x<?php echo ($r["id"]); ?>").addClass("active-icon");
+//        alert(<?php echo ($r["id"]); ?>);
+        $(".xtt").css({'opacity':'0','z-index':'0'});
+        $(".xt<?php echo ($r["id"]); ?>").css({'opacity':'1','z-index':'99'});
         
     });<?php endforeach; endif;?>
         })

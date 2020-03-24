@@ -170,7 +170,7 @@
                             <div class="cn-item po-bo main-team" style="bottom: {$r.xz}px; right: {$r.yz}px;"
                                 id="x{$r.id}">
                                 <span><i class="fa fa-map-marker icon"></i></span>
-                                <div class="box">{$r.title}</div>
+                                <div class="box xt{$r.id} xtt">{$r.title}</div>
                             </div>
                         </YP:list>
 
@@ -208,10 +208,15 @@
     
     $('#x{$r.id}').click(function () {
         $('.b{$r.id}').click();
+        $(".xtt").css({'opacity':'0','z-index':'0'});
+        $(".xt{$r.id}").css({'opacity':'1','z-index':'99'});
     });
     $(".b{$r.id}").click(function () {
         $("#x{$r.id}").siblings().removeClass('active-icon');
         $("#x{$r.id}").addClass("active-icon");
+//        alert({$r.id});
+        $(".xtt").css({'opacity':'0','z-index':'0'});
+        $(".xt{$r.id}").css({'opacity':'1','z-index':'99'});
         
     });
     </YP:list>
