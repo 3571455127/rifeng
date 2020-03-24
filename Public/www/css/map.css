@@ -1,16 +1,23 @@
-body {
-    font: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif
-}
-
-li {
-    font-family: 'Helvetica Neue' !important;
-}
-
-
 body,
 html {
     background: #fff;
+    font-family: "Arial" !important;
+}
 
+a,
+button,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+p,
+select {
+    font-family: "Arial" !important;
 }
 
 /* header */
@@ -20,7 +27,7 @@ header {
 }
 
 header nav li a {
-    color: #000;
+    color: #333;
     text-decoration: none;
     position: relative;
 }
@@ -95,11 +102,10 @@ header.scrolled .logo-container img {
 }
 
 #why-buy-one .benefits-container .benefit p {
-    font-size: 14px;
+    font-size: 15px;
     color: #666;
     line-height: 1.4;
 }
-
 
 
 
@@ -340,13 +346,14 @@ body .group-one .active .m-btn {
 
 
 .main-team .box {
+    font-size: 16px;
     position: absolute;
     opacity: 0;
     top: -40px;
     left: -50px;
     box-shadow: 0 0 10px 0 #ccc;
     background: white;
-    padding: 10px 5px;
+    padding: 5px;
     transition: all .3s;
 }
 
@@ -592,7 +599,7 @@ footer form p {
 footer form input {
     height: 50px;
     line-height: 50px;
-    border: 1px solid #B8B8B8 !important;
+    border: 1px solid #484848 !important;
     background-color: #222 !important;
     border-radius: 2px !important;
     color: #fff !important;
@@ -713,6 +720,7 @@ footer form .submit-btn {
 
 .btn-primary {
     cursor: default;
+    padding: 6% 0;
 }
 
 #how-it-works .btn-img .hovers:hover img {
@@ -764,12 +772,31 @@ footer form .submit-btn {
 }
 
 #how-it-works .box p {
-    color: #4D4D4D;
+    color: #4c4c4c;
 }
 
+#how-it-works h3,
+#why-buy-one h4 {
+    color: #00a2ff;
+}
 
+header .header-container {
+    max-width: 1140px;
+}
+
+header nav ul {
+    margin: 0;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end;
+}
 
 @media (max-width: 1920px) {
+
+    #how-it-works h3,
+    #why-buy-one h4 {
+        font-size: 36px;
+    }
 
     .main .swiper-container .swiper-button-next {
         background-image: url("../images/next.png");
@@ -865,6 +892,14 @@ footer form .submit-btn {
 
     footer .internet a {
         color: #B3B3B3;
+    }
+
+    footer .footer-content>div:nth-child(2) {
+        width: 0;
+    }
+
+    footer .footer-content .txt {
+        padding-left: 8%;
     }
 }
 
@@ -980,5 +1015,20 @@ footer form .submit-btn {
     .modal-content .modal-body {
         height: 220px;
     }
-}
 
+    .cn-item .icon {
+        font-size: 32px;
+    }
+
+    .main-team .box {
+        font-size: 26px;
+        top: -55px;
+        left: -95px;
+        width: 200px;
+
+    }
+
+    footer .footer-content .txt {
+        padding-left: 0;
+    }
+}

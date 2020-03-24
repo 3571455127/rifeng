@@ -59,8 +59,8 @@
 
 
     <div class="main">
-        <div id="home"></div>
-        <!-- swiper -->
+        <div id="home">
+            <!-- swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <?php  $_result=M("slide_data")->field("*")->where("fid = 1 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide"> <a href="<?php echo ($r["link"]); ?>" title="<?php echo ($r["title"]); ?>" target="_blank">
@@ -76,7 +76,8 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
         </div>
-
+        </div>
+        
         <!-- Way of working -->
         <div id="how-it-works" class="target-element">
             <div id="working"></div>
@@ -192,6 +193,71 @@
             </div>
 
         </div>
+        <div>
+ <!-- footer -->
+ <footer>
+    <div id="contact"></div>
+    <div class="container">
+        <div class="row">
+            <div class="footer-content clearfix">
+                <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="top clearfix">
+                        <div class="box-img col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img class="" src="__PUBLIC__/www/images/logo.png" alt="">
+                        </div>
+
+                        <div class="company col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                            <p><?php echo ($cnname); ?></p>
+                            <p><?php echo ($site_name); ?></p>
+                        </div>
+                    </div>
+                    <div class="text col-lg-7">
+                        <div class="title">Lorem Ipsum</div>
+                        <p>
+                           <?php getcatvar('page','id = 78','cont');?>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-0 col-xs-0"></div>
+                <div class="form col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <form name="form" method="post" onsubmit="return beforeSubmit2(this);" action="index.php?g=Home&a=message" enctype="multipart/form-data">
+                        <input type="hidden" name="lang" value="<?php echo ($Lang); ?>">
+                        <div class="box">
+                            <p>Name:</p>
+                            <input type="text" name="name" placeholder="">
+                        </div>
+                        <div class="box">
+                            <p>Email:</p>
+                            <input type="text" name="email" placeholder="">
+                        </div>
+                        <div class="box">
+                            <p>Message for max Prefab:</p>
+                            <input type="text" name="message" placeholder="">
+                        </div>
+                        <input type="submit" value="Send" class="submit-btn">
+                    </form>
+                </div>
+            </div>
+            <div class="info clearfix">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"><img src="__PUBLIC__/www/images/address.png"
+                        alt=""><?php echo ($address); ?></div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12"><img src="__PUBLIC__/www/images/phone.png" alt=""><?php echo ($phone); ?>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"><img src="__PUBLIC__/www/images/eamil.png" alt="">
+                    <a href="mailto:<?php echo ($email); ?>" class="emails" target="_blank"><?php echo ($email); ?></a>
+                </div>
+
+            </div>
+            <div class="internet"><a href="<?php echo ($wwwurl); ?>" target="_blank"><?php echo ($wwwurl); ?></a></div>
+        </div>
+    </div>
+
+    <div class="goTop" style="display: block;">
+        <i class="topIcon"></i>
+        <p>TOP</p>
+    </div>
+</footer>
+        </div>
 
     </div>
     <script>
@@ -215,72 +281,13 @@
         })
     </script>
 
-
-
-    <!-- footer -->
-    <footer>
-        <div id="contact"></div>
-        <div class="container">
-            <div class="row">
-                <div class="footer-content clearfix">
-                    <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="top clearfix">
-                            <div class="box-img col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <img class="" src="__PUBLIC__/www/images/logo.png" alt="">
-                            </div>
-
-                            <div class="company col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                                <p><?php echo ($cnname); ?></p>
-                                <p><?php echo ($site_name); ?></p>
-                            </div>
-                        </div>
-                        <div class="text col-lg-7">
-                            <div class="title">Lorem Ipsum</div>
-                            <p>
-                               <?php getcatvar('page','id = 78','cont');?>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2  col-md-2 col-sm-0 col-xs-0"></div>
-                    <div class="form col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <form name="form" method="post" onsubmit="return beforeSubmit2(this);" action="index.php?g=Home&a=message" enctype="multipart/form-data">
-                            <input type="hidden" name="lang" value="<?php echo ($Lang); ?>">
-                            <div class="box">
-                                <p>Name:</p>
-                                <input type="text" name="name" placeholder="">
-                            </div>
-                            <div class="box">
-                                <p>Email:</p>
-                                <input type="text" name="email" placeholder="">
-                            </div>
-                            <div class="box">
-                                <p>Message for max Prefab:</p>
-                                <input type="text" name="message" placeholder="">
-                            </div>
-                            <input type="submit" value="Send" class="submit-btn">
-                        </form>
-                    </div>
-                </div>
-                <div class="info clearfix">
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"><img src="__PUBLIC__/www/images/address.png"
-                            alt=""><?php echo ($address); ?></div>
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12"><img src="__PUBLIC__/www/images/phone.png" alt=""><?php echo ($phone); ?>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"><img src="__PUBLIC__/www/images/eamil.png" alt="">
-                        <a href="mailto:<?php echo ($email); ?>" class="emails" target="_blank"><?php echo ($email); ?></a>
-                    </div>
-
-                </div>
-                <div class="internet"><a href="<?php echo ($wwwurl); ?>" target="_blank"><?php echo ($wwwurl); ?></a></div>
-            </div>
-        </div>
-
-        <div class="goTop" style="display: block;">
-            <i class="topIcon"></i>
-            <p>TOP</p>
-        </div>
-    </footer>
-
 </body>
+<script>
+    new hScroll({
+    nav1: '#box ul>li', //导航对应的元素
+    nav2: '.main>div', //监听的元素
+    checkClass: 'actives' //选中的样式
+});
 
+</script>
 </html>
