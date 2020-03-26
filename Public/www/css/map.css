@@ -37,7 +37,7 @@ header nav .actives a {
     color: #00a2ff;
 }
 
-header nav a::before {
+/* header nav a::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -47,7 +47,7 @@ header nav a::before {
     height: 2px;
     background-color: transparent;
     transition: all 1.5s;
-}
+} */
 
 header nav .actives a::before {
     /* content: "";
@@ -56,19 +56,19 @@ header nav .actives a::before {
     left: 50%;
     transform: translateX(-50%);
     height: 2px; */
-    width: 20%;
-    background-color: #00a2ff;
+    /* width: 20%; */
+    /* background-color: #00a2ff; */
 
 }
 
 header nav li:hover a {
     text-decoration: none;
-    color: #00a2ff;
+    /* color: #00a2ff; */
 }
 
-header nav li:hover a::before {
+/* header nav li:hover a::before {
     background-color: #00a2ff;
-}
+} */
 
 header .logo-container img {
     width: 100%;
@@ -693,7 +693,7 @@ footer form .submit-btn {
 }
 
 #how-it-works {
-    padding: 5%;
+    padding: 0 0 5% 0;
 }
 
 .btn {
@@ -840,6 +840,10 @@ header nav ul {
     .modal-dialog {
         width: 100%;
         margin: 0;
+    }
+
+    .goTop {
+        bottom: 4rem;
     }
 
     #how-it-works h3,

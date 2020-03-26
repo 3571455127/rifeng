@@ -19,6 +19,7 @@ $(function () {
     // 轮播
     var swiper = new Swiper('.swiper-container', {
         autoplay: true,
+        speed: 1200,
         loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
@@ -26,7 +27,7 @@ $(function () {
         },
         pagination: {
             el: '.swiper-pagination',
-        }
+        },
     });
 
 
