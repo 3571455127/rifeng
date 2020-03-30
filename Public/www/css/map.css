@@ -78,6 +78,9 @@ header.scrolled .logo-container img {
     width: 50%;
 }
 
+header.scrolled {
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+}
 
 #how-it-works .left h3 {
     text-transform: uppercase;
@@ -917,6 +920,10 @@ header nav ul {
 
     footer .footer-content .txt {
         padding-left: 8%;
+    }
+
+    #why-buy-one {
+        margin: 55px 0 25px 0;
     }
 }
 
