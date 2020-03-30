@@ -837,6 +837,15 @@ header nav ul {
         width: 700px;
         height: 400px;
     }
+
+    #why-buy-one {
+        margin: 65px 0 0 0;
+        padding: 100px 0;
+    }
+
+    #how-it-works .container {
+        padding-top: 8% !important;
+    }
 }
 
 @media (max-width: 1680px) {
@@ -844,7 +853,9 @@ header nav ul {
         width: 100%;
         margin: 0;
     }
-
+    #how-it-works .container {
+        padding-top: 5% !important;
+    }
     .goTop {
         bottom: 4rem;
     }
